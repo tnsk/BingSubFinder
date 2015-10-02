@@ -19,7 +19,9 @@ sayfa = 1
 
 sublinkler = []
 temizsub = []
+print '#' * 54
 print '#' * 12 + " Bulunan Linkler Listeleniyor " + '#' * 12
+print '#' * 54
 while True:
 	baglan = urllib2.urlopen("http://www.bing.com/search?q=domain%3a"+domain+"&first="+str(sayfa))
 	kaynak = baglan.read()
@@ -34,8 +36,9 @@ while True:
 		sayfa = sayfa + 11
 	else:
 		break
-
+print '#' *35
 print "[+] linkler tekillestiriyor..."
+print '#' * 35
 
 temizsub = set(sublinkler)
 
